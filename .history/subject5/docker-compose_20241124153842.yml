@@ -1,0 +1,10 @@
+version: "3.0"
+services:
+  frontapp:
+    build: ./FrontEnd
+    image: kimyeonghyun/frontapp:latest
+    ports:
+      - "8000:8000"
+  backapp:
+    build: ./BackEnd
+    # image: your_do/backapp:latest
